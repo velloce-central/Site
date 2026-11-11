@@ -1106,3 +1106,23 @@ html.loading .hero *{animation-play-state:paused!important}
 .vc-t li{font-size:14.5px;color:var(--muted);padding-left:18px;border-left:1px solid rgba(217,172,85,.4)}
 .vc-t li b{display:block;font-family:var(--serif);font-style:italic;font-weight:500;font-size:19px;color:var(--fg);margin-bottom:2px}
 @media (max-width:900px){.vcase{grid-template-columns:1fr}}
+
+/* ---------- correções de sobreposição no computador (11/11/2026) ---------- */
+/* manifesto: o texto cabe na altura da tela (antes passava por baixo do topo e a etiqueta caía em cima do texto) */
+.mstage{flex-direction:column;justify-content:safe center;align-items:stretch;padding:96px 0 32px}
+.mstage .eyebrow{position:static;margin:0 0 clamp(14px,3vh,28px)}
+.mw{font-size:clamp(30px,min(4.6vw,7vh),72px)}
+/* feixe: se a tela for baixa, encolhe e nunca corta por cima */
+.fstage{justify-content:safe center;gap:clamp(16px,3.5vh,56px);padding-top:96px}
+.fhead h2{font-size:clamp(28px,min(4.2vw,6vh),64px)}
+@media (max-height:820px) and (min-width:901px){.track{height:150px}}
+/* feixe: um quadro sai antes de o próximo entrar (antes os dois apareciam um em cima do outro na troca) */
+.dc{--a:clamp(0,(var(--p) - var(--t1) - .07)*16,1);--b:clamp(0,(var(--p) - var(--t2))*16,1)}
+.dc.c0{--a:1;--b:clamp(0,(var(--p) - .08)*16,1)}
+/* história do V e a vida que o resultado compra: mesma regra, um texto sai antes do outro entrar */
+.ch{--a:clamp(0,(var(--p) - var(--t1) - .03)*24,1);--b:clamp(0,(var(--p) - var(--t2,2))*24,1)}
+.ch.c1{--a:1}
+.sc{--a:clamp(0,(var(--p) - var(--t1) - .03)*24,1);--b:clamp(0,(var(--p) - var(--t2))*24,1)}
+.sc:first-child{--a:1}
+/* E.D.I.T.H: o retrato fica na largura da coluna (antes esticava na altura e passava por cima do texto) */
+.eport{align-self:center;width:100%;height:auto}
