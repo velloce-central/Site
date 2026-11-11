@@ -1,0 +1,1 @@
+(function(){var d=document.documentElement;d.classList.add('js');var seen=false;try{seen=sessionStorage.getItem('vl-seen')==='1';sessionStorage.setItem('vl-seen','1');}catch(e){}if(seen)d.classList.add('noloader');else d.classList.add('loading');})();
