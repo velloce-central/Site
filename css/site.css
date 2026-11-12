@@ -1126,3 +1126,10 @@ html.loading .hero *{animation-play-state:paused!important}
 .sc:first-child{--a:1}
 /* E.D.I.T.H: o retrato fica na largura da coluna (antes esticava na altura e passava por cima do texto) */
 .eport{align-self:center;width:100%;height:auto}
+
+/* bio do Juan na candidatura */
+.jbio{max-width:440px;margin:0 0 44px;padding-left:18px;border-left:1px solid var(--gold)}
+.jbio .jname{font-family:var(--serif);font-size:24px;line-height:1.1;margin:0 0 10px;color:var(--fg)}
+.jbio .jname span{display:block;font-family:var(--display);font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--taupe);margin-top:8px}
+.jbio p{font-size:15px;line-height:1.6;color:var(--muted);margin:0}
+.jbio b{font-weight:600;color:var(--fg)}
