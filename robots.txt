@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.deixacomavelloce.com/sitemap.xml
+Sitemap: https://deixacomavelloce.com/sitemap.xml
