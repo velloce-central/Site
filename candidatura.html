@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Candidatura · Velloce</title>
+<meta name="description" content="Candidate a sua clínica de harmonização à carteira da Velloce. Seis perguntas, menos de um minuto, resposta do Juan Botelho em até um dia útil.">
+<meta name="robots" content="noindex, follow">
+<meta name="theme-color" content="#F6F1E9">
+<meta name="format-detection" content="telephone=no">
+<link rel="canonical" href="https://deixacomavelloce.com/candidatura">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Velloce">
+<meta property="og:title" content="Candidatura · Velloce">
+<meta property="og:description" content="Sua clínica pode ser a próxima referência da harmonização. Candidate em menos de um minuto.">
+<meta property="og:url" content="https://deixacomavelloce.com/candidatura">
+<meta property="og:image" content="https://deixacomavelloce.com/img/og.jpg">
+<script src="js/consent.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..600;1,6..96,400..600&family=Jost:wght@200..500&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/candidatura.css">
+</head>
+<body>
+<svg class="topo" viewBox="0 0 1200 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><g id="topo-g"></g></svg>
+
+<header class="cd-top">
+  <a class="cd-brand" href="/" aria-label="Velloce, página inicial">
+    <svg viewBox="0 0 304 286" aria-hidden="true"><path class="lv" fill="#8A7458" d="M0 35 L41 35 C41 150 75 200 149 240 L149 286 C60 245 0 160 0 35 Z"/><path class="rv" fill="#D9AC55" d="M263 0 L304 0 C304 160 245 245 149 286 L149 240 C225 200 263 140 263 0 Z"/></svg>
+    <b>VELLOCE</b>
+  </a>
+  <div class="cd-count" id="count" aria-live="polite"><span>Candidatura</span></div>
+</header>
+
+<main class="cd" id="conteudo">
+  <aside class="cd-side" aria-label="Quem analisa a sua candidatura">
+    <div class="juan">
+      <img src="img/juan.jpg" alt="Juan Botelho, sócio-fundador da Velloce" width="700" height="883">
+      <div>
+        <b>Juan Botelho</b>
+        <span>Sócio-fundador · lê cada candidatura</span>
+      </div>
+    </div>
+    <ol class="trilha" id="trilha">
+      <li data-k="0"><i></i><div><b>Você responde</b><span>Seis perguntas, menos de um minuto</span></div></li>
+      <li data-k="1"><i></i><div><b>O WhatsApp abre pronto</b><span>Sua candidatura já vai escrita, é só enviar</span></div></li>
+      <li data-k="2"><i></i><div><b>O Juan responde</b><span>Em até um dia útil, pelo mesmo WhatsApp</span></div></li>
+    </ol>
+    <p class="sign">Onde o cuidado encontra agilidade.</p>
+  </aside>
+
+  <section class="cd-stage" aria-live="polite">
+    <div class="prog" id="prog" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <form id="cf" novalidate autocomplete="on">
+
+      <!-- 0. abertura -->
+      <div class="step on" data-step="intro">
+        <p class="eyebrow">Carteira fechada · poucas clínicas por escolha</p>
+        <h1 class="big">Sua clínica pode ser a <em>próxima referência.</em></h1>
+        <p class="lead">A Velloce atende poucas clínicas de harmonização, aquelas que serão as próximas referências do mercado. Conte um pouco sobre a sua.</p>
+        <div class="chips-info"><span><b>6</b> perguntas</span><span><b>&lt;1</b> minuto</span><span><b>1</b> dia útil para a resposta</span></div>
+        <button type="button" class="go" data-next>Começar candidatura
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></button>
+        <p class="tiny">Toque no botão acima para começar.</p>
+      </div>
+
+      <!-- 1 -->
+      <div class="step" data-step="1" data-req="nome">
+        <p class="qn">01</p>
+        <label class="q" for="nome">Como podemos te chamar?</label>
+        <input class="in" id="nome" name="nome" autocomplete="name" maxlength="80" placeholder="Seu nome" enterkeyhint="next">
+        <p class="err" role="alert"></p>
+        <div class="nav"><button type="button" class="back" data-back>Voltar</button><button type="button" class="go" data-next>Continuar <kbd>Enter ↵</kbd></button></div>
+      </div>
+
+      <!-- 2 -->
+      <div class="step" data-step="2" data-req="clinica">
+        <p class="qn">02</p>
+        <label class="q" for="clinica">Qual é o nome da sua clínica?</label>
+        <input class="in" id="clinica" name="clinica" autocomplete="organization" maxlength="100" placeholder="Nome da clínica" enterkeyhint="next">
+        <p class="err" role="alert"></p>
+        <div class="nav"><button type="button" class="back" data-back>Voltar</button><button type="button" class="go" data-next>Continuar <kbd>Enter ↵</kbd></button></div>
+      </div>
+
+      <!-- 3 -->
+      <div class="step" data-step="3" data-req="cidade">
+        <p class="qn">03</p>
+        <p class="q">Onde você atende?</p>
+        <div class="pair">
+          <label class="sm-l">Cidade<input class="in" id="cidade" name="cidade" autocomplete="address-level2" maxlength="60" placeholder="Ex.: Balneário Camboriú" enterkeyhint="next"></label>
+          <label class="sm-l">Instagram da clínica <em>opcional</em><input class="in" id="instagram" name="instagram" maxlength="40" placeholder="@suaclinica" autocapitalize="off" spellcheck="false" enterkeyhint="next"></label>
+        </div>
+        <p class="err" role="alert"></p>
+        <div class="nav"><button type="button" class="back" data-back>Voltar</button><button type="button" class="go" data-next>Continuar <kbd>Enter ↵</kbd></button></div>
+      </div>
+
+      <!-- 4 -->
+      <div class="step" data-step="4" data-pick="faturamento">
+        <p class="qn">04</p>
+        <p class="q">Quanto a clínica fatura por mês, em média?</p>
+        <div class="opts" role="radiogroup" aria-label="Faturamento mensal">
+          <button type="button" class="opt" data-v="Até R$ 25 mil"><i></i>Até R$ 25 mil</button>
+          <button type="button" class="opt" data-v="De R$ 25 a 50 mil"><i></i>De R$ 25 a 50 mil</button>
+          <button type="button" class="opt" data-v="De R$ 50 a 100 mil"><i></i>De R$ 50 a 100 mil</button>
+          <button type="button" class="opt" data-v="Acima de R$ 100 mil"><i></i>Acima de R$ 100 mil</button>
+        </div>
+        <p class="hint">Toque em uma opção. A próxima pergunta abre sozinha.</p>
+        <div class="nav"><button type="button" class="back" data-back>Voltar</button></div>
+      </div>
+
+      <!-- 5 -->
+      <div class="step" data-step="5" data-pick="anuncios">
+        <p class="qn">05</p>
+        <p class="q">Você já investe em anúncios?</p>
+        <div class="opts two" role="radiogroup" aria-label="Investe em anúncios">
+          <button type="button" class="opt" data-v="Sim"><i></i>Sim, já invisto</button>
+          <button type="button" class="opt" data-v="Ainda não"><i></i>Ainda não</button>
+        </div>
+        <p class="hint">Toque em uma opção.</p>
+        <div class="nav"><button type="button" class="back" data-back>Voltar</button></div>
+      </div>
+
+      <!-- 6 -->
+      <div class="step" data-step="6" data-pick="casos">
+        <p class="qn">06</p>
+        <p class="q">Você tem casos de antes e depois full face?</p>
+        <div class="opts" role="radiogroup" aria-label="Casos de antes e depois">
+          <button type="button" class="opt" data-v="Sim, e posso divulgar"><i></i>Sim, e posso divulgar</button>
+          <button type="button" class="opt" data-v="Sim, mas ainda não divulgo"><i></i>Sim, mas ainda não divulgo</button>
+          <button type="button" class="opt" data-v="Ainda não"><i></i>Ainda não</button>
+        </div>
+        <p class="hint">Última pergunta.</p>
+        <div class="nav"><button type="button" class="back" data-back>Voltar</button></div>
+      </div>
+
+      <!-- 7. revisão e envio -->
+      <div class="step" data-step="fim">
+        <p class="eyebrow">Tudo pronto</p>
+        <h2 class="big sm"><span id="ola">Falta só enviar.</span></h2>
+        <dl class="resumo" id="resumo"></dl>
+        <button type="submit" class="go wa" id="enviar">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4a.5.5 0 0 0 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.1.7a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3Z"/></svg>
+          Enviar candidatura no WhatsApp</button>
+        <p class="tiny">O WhatsApp abre com a sua candidatura já escrita. Lá, é só tocar em enviar.</p>
+        <div class="nav"><button type="button" class="back" data-back>Voltar e mudar</button></div>
+      </div>
+
+      <!-- 8. depois de enviar -->
+      <div class="step" data-step="ok">
+        <div class="selo" aria-hidden="true"><svg viewBox="0 0 304 286"><path fill="#8A7458" d="M0 35 L41 35 C41 150 75 200 149 240 L149 286 C60 245 0 160 0 35 Z"/><path fill="#D9AC55" d="M263 0 L304 0 C304 160 245 245 149 286 L149 240 C225 200 263 140 263 0 Z"/></svg></div>
+        <h2 class="big sm">Agora é com o <em>Juan.</em></h2>
+        <p class="lead">Se você enviou a mensagem no WhatsApp, a sua candidatura chegou. Ele responde em até um dia útil, por lá mesmo.</p>
+        <a class="go ghost" id="walink" href="#" target="_blank" rel="noopener">O WhatsApp não abriu? Toque aqui</a>
+        <p class="tiny"><a href="/">Conhecer a Velloce</a></p>
+      </div>
+    </form>
+  </section>
+</main>
+
+<p class="priv">Suas respostas vão só para a conversa no WhatsApp da Velloce e servem para analisar a sua candidatura. <a href="politica-de-privacidade.html">Política de privacidade</a> · <a href="#" data-cookies>Cookies</a></p>
+
+<div class="cookies" id="cookies" role="dialog" aria-live="polite" aria-label="Cookies" hidden>
+  <div class="ck-in">
+    <p class="ck-t"><b>Cookies, com a sua permissão.</b> Usamos cookies para medir as visitas e mostrar a Velloce a quem tem o perfil certo. Os essenciais fazem o site funcionar; os outros só entram se você aceitar. <a href="politica-de-privacidade.html#cookies">Saiba mais</a></p>
+    <div class="ck-prefs" id="ck-prefs" hidden>
+      <label class="ck-op"><input type="checkbox" checked disabled><span><b>Essenciais</b>Guardam a sua escolha e mantêm o site funcionando. Sempre ativos.</span></label>
+      <label class="ck-op"><input type="checkbox" id="ck-an"><span><b>Medição</b>Contam visitas e páginas vistas, sem identificar você pelo nome.</span></label>
+      <label class="ck-op"><input type="checkbox" id="ck-mk"><span><b>Marketing</b>Meta e Google: anúncios para quem visitou e a origem da visita (campanha).</span></label>
+      <button type="button" class="ckbtn ghost" id="ck-save">Salvar escolha</button>
+    </div>
+    <div class="ck-bt">
+      <button type="button" class="ck-l" id="ck-cfg">Personalizar</button>
+      <button type="button" class="ckbtn ghost" id="ck-none">Só essenciais</button>
+      <button type="button" class="ckbtn" id="ck-all">Aceitar todos</button>
+    </div>
+  </div>
+</div>
+<script src="js/candidatura.js"></script>
+</body>
+</html>
