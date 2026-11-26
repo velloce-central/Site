@@ -1133,3 +1133,7 @@ html.loading .hero *{animation-play-state:paused!important}
 .jbio .jname span{display:block;font-family:var(--display);font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--taupe);margin-top:8px}
 .jbio p{font-size:15px;line-height:1.6;color:var(--muted);margin:0}
 .jbio b{font-weight:600;color:var(--fg)}
+
+/* nomes de doutoras preservados: o texto real não está no código */
+.nome-oculto{filter:blur(5px);-webkit-user-select:none;user-select:none;pointer-events:none;display:inline-block;padding:0 .08em}
+@media print{.nome-oculto{filter:none;color:transparent;background:currentColor}}
