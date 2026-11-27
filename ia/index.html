@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Como fiz um comercial inteiro com IA: ferramentas, roteiro em 7 atos e o prompt para montar o seu.">
+<meta name="theme-color" content="#F5F6F7">
+<title>Velloce para Clínicas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="/ia/ia.css">
+</head>
+<body>
+
+
+<div class="w">
+<header class="top">
+ <a class="logo" href="#"><svg width="30" height="28" viewBox="0 0 304 286" aria-hidden="true" style="flex:none"><path fill="#8A7458" d="M0 35 L41 35 C41 150 75 200 149 240 L149 286 C60 245 0 160 0 35 Z"/><path fill="#D9AC55" d="M263 0 L304 0 C304 160 245 245 149 286 L149 240 C225 200 263 140 263 0 Z"/></svg><span>VELLOCE</span></a>
+ <small>por Marcella Botelho</small>
+</header>
+<div class="hero">
+ <span class="pill"><i></i>Feito 100% com IA · Claude Opus 5.5</span>
+ <h1>Um comercial inteiro feito com IA <span class="dim">em 30 minutos.</span></h1>
+ <p class="lead">O primeiro vídeo que fiz assim levou horas. Hoje, um comercial como esse sai em 30 minutos. Se você veio pelo comercial, aqui estão as respostas para o que mais me perguntaram: as ferramentas, a estrutura do roteiro e um prompt que monta o comercial do seu negócio. Se você faz <b>harmonização facial</b>, a Central que apareceu no comercial existe e funciona todos os dias nas clínicas da Velloce.</p>
+ <div class="fork">
+  <a href="#material"><b>Vim pelo comercial</b><span>quero saber como foi feito ↓</span></a>
+  <a href="#central" class="dr"><b>Faço harmonização facial</b><span>quero ver a Central funcionando ↓</span></a>
+ </div>
+</div>
+</div>
+
+<section id="material" class="alt">
+<div class="w">
+ <div class="sec-head">
+  <span class="cap">Para quem cria com IA</span>
+  <h2>As 3 perguntas que eu mais recebi <span class="dim">sobre esse comercial.</span></h2>
+  <p>Sem câmera, sem ator e sem editor de vídeo. O que mudou não foi a ferramenta: foi o jeito de pensar antes de pedir, com um roteiro bem pensado antes da primeira cena.</p>
+ </div>
+
+ <div class="q">
+  <div class="qh"><span class="qn">01</span><h3>Quais ferramentas você usou?</h3><p>Nenhum editor de vídeo. Cada cena é uma página animada, com objetos em 3D, e o Claude filma, monta e sonoriza.</p></div>
+  <div class="stack">
+   <div class="tool"><div class="tn">Claude Opus 5.5<small>cérebro</small></div><p>Roteiro, direção de cena e o código de cada animação.</p></div>
+   <div class="tool"><div class="tn">Skill de vídeo<small>método</small></div><p>A skill de criação de vídeo do Claude organiza o trabalho cena por cena e renderiza sem refazer tudo a cada ajuste.</p></div>
+   <div class="tool"><div class="tn">HTML e CSS<small>animação</small></div><p>Cada cena é uma página com movimento: texto, gráfico, agenda enchendo. Sem After Effects.</p></div>
+   <div class="tool"><div class="tn">Three.js<small>3D</small></div><p>Os objetos em 3D do nicho: paquímetro, seringa, o celular recebendo mensagens e o lápis que desenha o rosto no final.</p></div>
+   <div class="tool"><div class="tn">Playwright<small>câmera</small></div><p>Abre a página e grava quadro a quadro, em alta resolução.</p></div>
+   <div class="tool"><div class="tn">FFmpeg<small>montagem</small></div><p>Junta as cenas, a voz e a música em um único MP4.</p></div>
+   <div class="tool"><div class="tn">ElevenLabs<small>som</small></div><p>Narração bloco por bloco, trilha com as viradas marcadas no tempo e cada efeito sonoro, gerados pela API.</p></div>
+  </div>
+ </div>
+
+ <div class="q">
+  <div class="qh"><span class="qn">02</span><h3>Como você estruturou o roteiro?</h3><p>Em 7 atos. Os tempos são proporção do vídeo: o nosso tem 1 minuto e meio, mas a mesma estrutura serve para 30 segundos ou 3 minutos.</p></div>
+  <div class="atos">
+   <div class="bar"><span style="width:7%;background:#CFA554"></span><span style="width:11%;background:#E25C4B"></span><span style="width:7%;background:#E89A4A"></span><span style="width:33%;background:#3E4552"></span><span style="width:19%;background:#6B7280"></span><span style="width:9%;background:#5BB98A"></span><span style="width:14%;background:#0D0E11"></span></div>
+   <div class="ato"><div class="t"><i style="background:#CFA554"></i>0 a 7%</div><div><b>Reconheça quem assiste</b><span>Comece pelo que a pessoa já faz bem. No nosso: “Você é excelente no que faz.” Quem se sente vista continua assistindo.</span></div></div>
+   <div class="ato"><div class="t"><i style="background:#E25C4B"></i>7 a 18%</div><div><b>O que ainda trava</b><span>As dores em cenas rápidas e concretas: mensagens acumulando, resposta atrasada. Mostre, não explique.</span></div></div>
+   <div class="ato"><div class="t"><i style="background:#E89A4A"></i>18 a 25%</div><div><b>A virada</b><span>Uma frase que muda o jeito de ver o problema. O que ela acha que precisa não é o que ela precisa de verdade.</span></div></div>
+   <div class="ato"><div class="t"><i style="background:#3E4552"></i>25 a 58%</div><div><b>O sonho, uma cena por vez</b><span>Resultado de vida, não funcionalidade: trabalhar menos, ganhar mais, agenda cheia das pessoas certas. Uma ideia por cena.</span></div></div>
+   <div class="ato"><div class="t"><i style="background:#6B7280"></i>58 a 77%</div><div><b>Como chega lá</b><span>No máximo duas coisas do produto, só o que a pessoa enxerga. Deixe a imagem mostrar e a narração falar do resultado.</span></div></div>
+   <div class="ato"><div class="t"><i style="background:#5BB98A"></i>77 a 86%</div><div><b>Prova</b><span>Um número real, com origem e autorização. Nunca uma projeção apresentada como resultado.</span></div></div>
+   <div class="ato"><div class="t"><i style="background:#0D0E11"></i>86 a 100%</div><div><b>Posicionamento e assinatura</b><span>Para quem você é, uma frase de assinatura e a logo. Uma única chamada para ação.</span></div></div>
+  </div>
+ </div>
+
+ <div class="q">
+  <div class="qh"><span class="qn">03</span><h3>“Desenrola um comercial para o meu negócio?”</h3><p>Funciona para clínica, loja, serviço, SaaS ou qualquer nicho. Cole no Claude, responda às perguntas que ele fizer, e ele escreve o comercial nos 7 atos, com tempo, cena e som.</p></div>
+  <div class="term">
+   <div class="tb"><i></i><i></i><i></i><span>briefing-de-comercial.txt</span><button class="copy" data-c="p0">copiar</button></div>
+<pre id="p0">Você vai dirigir comigo o comercial do meu negócio, um vídeo feito 100% com IA. Antes de escrever qualquer roteiro, me entreviste até ter certeza de cada ponto abaixo. Faça uma pergunta por vez e não avance sem a minha resposta.
+
+1. Negócio: o que eu entrego, em uma frase que meu cliente entenderia.
+2. Público: quem assiste, o que já conquistou e aonde quer chegar.
+3. O reconhecimento: o que essa pessoa já faz bem e gosta de ouvir.
+4. O que trava: as dores que impedem o crescimento dela, em situações concretas que dá para mostrar.
+5. A virada: o que ela acha que precisa e o que precisa de verdade.
+6. O sonho: de 3 a 4 resultados de vida que ela quer (tempo, dinheiro, reconhecimento, família), sem contar como eu faço por dentro.
+7. Como chega lá: no máximo 2 coisas do meu produto que podem aparecer, e a imagem que mostra cada uma.
+8. Prova: um número real, com a fonte e a autorização para usar.
+9. Posicionamento: para quem eu sou e para quem eu não sou.
+10. Visual: 16:9 ou 9:16, duração total, cores, fontes, objetos em 3D que combinam com o meu nicho e o que nunca pode aparecer.
+11. Narração: tom de voz, palavras proibidas e como escrever os nomes próprios para a voz pronunciar certo.
+12. Final: a frase de assinatura e a única ação que quero que a pessoa faça.
+
+Com tudo respondido, escreva o comercial nesta estrutura, respeitando as proporções:
+- 0 a 7%: reconheça quem assiste
+- 7 a 18%: o que ainda trava, em cenas rápidas
+- 18 a 25%: a virada
+- 25 a 58%: o sonho, uma cena por vez
+- 58 a 77%: como chega lá, no máximo duas coisas do produto
+- 77 a 86%: prova
+- 86 a 100%: posicionamento, assinatura e logo
+
+Regras: fale de resultado e de sonho, não do que acontece por dentro. Uma ideia por cena, com uma frase curta que caiba na tela. Nunca prometa quanto a pessoa vai ganhar.
+
+Entregue em tabela: bloco, quando entra, até quando pode durar, o que aparece na tela (texto e objeto 3D), texto narrado e efeito sonoro. Depois, a descrição da trilha com os pontos de virada marcados no tempo e a lista do que preciso providenciar. Antes de me entregar, leia cada frase em voz alta e corte o que não soaria humano.
+
+Meu negócio é: <mark>[descreva em duas linhas]</mark></pre>
+  </div>
+ </div>
+
+ <div class="ponte"><p><b>Você trabalha com harmonização facial?</b> O comercial mostrou só uma parte. Veja como a Central atende suas pacientes enquanto você está com outra paciente.</p><a class="btn" href="#central">Ver a Central ↓</a></div>
+</div>
+</section>
+
+<section id="central">
+<div class="w">
+ <div class="sec-head">
+  <span class="cap">Para quem faz harmonização facial</span>
+  <h2>Tudo o que você viu no comercial, <span class="dim">funcionando na sua clínica.</span></h2>
+  <p>Seu tempo é na cadeira. A Central cuida do WhatsApp, do comercial e dos vídeos, e você acompanha tudo pelo celular.</p>
+ </div>
+ <div class="cards">
+  <div class="card"><video src="/ia/vera.mp4" poster="/ia/vera.jpg" autoplay muted loop playsinline preload="metadata"></video><div class="t">23h47. Respondida em 20 segundos.</div><p>A Vera acolhe, tira dúvidas, confere o Pix e agenda. A equipe acorda com a agenda andando.</p></div>
+  <div class="card"><video src="/ia/conteudo.mp4" poster="/ia/conteudo.jpg" autoplay muted loop playsinline preload="metadata"></video><div class="t">A doutora grava. A gente edita.</div><p>Roteiros toda semana e vídeos prontos para postar e anunciar. Nada de passar a noite editando no celular.</p></div>
+  <div class="card"><video src="/ia/notif.mp4" poster="/ia/notif.jpg" autoplay muted loop playsinline preload="metadata"></video><div class="t">Agendou, pagou: chega no seu celular.</div><p>Você acompanha cada resultado sem abrir nenhuma conversa.</p></div>
+ </div>
+ <p class="nota">Conversas e nomes de pacientes são fictícios. O vídeo da Dra. Ana Thum é real, com autorização.</p>
+
+ <div class="feat">
+  <div class="grp"><span class="cap">Atendimento</span>
+   <div class="it"><b>Vera, atendimento 24 horas</b><span>Responde em segundos, com o tom da sua clínica. Se a paciente perguntar, ela conta que é IA.</span></div>
+   <div class="it"><b>Reserva com Pix conferido</b><span>A Vera confere o comprovante e confirma o horário.</span></div>
+   <div class="it"><b>Follow-up no tempo certo</b><span>Quem parou de responder recebe novos contatos, sem insistência.</span></div>
+  </div>
+  <div class="grp"><span class="cap">Comercial</span>
+   <div class="it"><b>Funil por etapa</b><span>Cada paciente no seu lugar, do primeiro oi à consulta paga.</span></div>
+   <div class="it"><b>Ficha da paciente</b><span>Formulário, origem do anúncio, conversa e próximo passo em uma tela.</span></div>
+   <div class="it"><b>SDRs treinadas</b><span>Equipe humana no padrão da sua clínica, para o que só gente faz bem.</span></div>
+  </div>
+  <div class="grp"><span class="cap">Conteúdo</span>
+   <div class="it"><b>Roteiros toda semana</b><span>Para stories e reels, a partir das dúvidas reais das suas pacientes.</span></div>
+   <div class="it"><b>Edição de vídeos</b><span>Cortados, legendados e com ritmo, prontos para postar e anunciar.</span></div>
+   <div class="it"><b>Site que converte</b><span>Feito para levar a paciente do anúncio ao WhatsApp.</span></div>
+  </div>
+  <div class="grp"><span class="cap">Gestão</span>
+   <div class="it"><b>Notificações no celular</b><span>Agendou, chegou, pagou: você sabe na hora.</span></div>
+   <div class="it"><b>App da doutora</b><span>Campanhas, investimento por anúncio e retorno, em tempo real.</span></div>
+   <div class="it"><b>Alertas</b><span>Paciente parada ou conversa sem resposta não passa despercebida.</span></div>
+  </div>
+ </div>
+ <div class="integ"><span class="cap">Conversa com a agenda que você já usa</span>
+  <span class="lg"><img src="/ia/logo-clinicaflow.png" alt="">ClinicaFlow</span>
+  <span class="lg"><img src="/ia/logo-clinicorp.jpg" alt="">Clinicorp</span>
+  <span class="lg"><img src="/ia/logo-feegow.jpg" alt="">Feegow</span>
+  <span class="lg"><img src="/ia/logo-asaas.png" alt="">Asaas</span>
+ </div>
+</div>
+</section>
+
+<section class="alt">
+<div class="w">
+ <div class="sec-head">
+  <span class="cap">Resultados reais</span>
+  <h2>O que muda quando <span class="dim">tudo funciona junto.</span></h2>
+ </div>
+ <div class="res">
+  <div class="caso"><span class="cap">Santana · SP</span><p class="de">Investimento em anúncio nos primeiros 12 dias depois da virada</p><div class="val">R$ 1.305</div><div class="lin"></div><p class="de">Procedimentos pagos a mais no mesmo período</p><div class="val g">R$ 22 mil</div></div>
+  <div class="caso"><span class="cap">Rondônia</span><p class="de">Investimento em anúncio</p><div class="val">R$ 3.500</div><div class="lin"></div><p class="de">Faturamento a mais, somado ao que a clínica já tinha</p><div class="val g">R$ 25.250</div></div>
+ </div>
+ <p class="nota">Valores a mais, somados ao faturamento que cada clínica já tinha. Números enviados pelas doutoras, com autorização. Cada clínica tem seu ritmo, e resultado não é promessa.</p>
+</div>
+</section>
+
+<section>
+<div class="w ck">
+ <div style="display:grid;gap:16px;align-content:start">
+  <span class="cap">Teste rápido</span>
+  <h2>7 pontos onde sua clínica <span class="dim">perde paciente no WhatsApp.</span></h2>
+  <p class="dim">Marque o que acontece hoje. Ninguém vê além de você.</p>
+  <div class="placar" aria-live="polite"><div class="num"><span id="cnt">0</span><small> / 7</small></div><p id="msg" class="dim">Marque os itens da lista.</p></div>
+ </div>
+ <div style="min-width:0">
+  <ul class="lista">
+   <li><label><input type="checkbox"><span>A paciente mandou a última mensagem e ficou sem resposta.</span></label></li>
+   <li><label><input type="checkbox"><span>A resposta passa de 5 minutos, mesmo no horário comercial.</span></label></li>
+   <li><label><input type="checkbox"><span>Mensagem que chega depois das 18h, quando o expediente acaba, só é respondida no dia seguinte.</span></label></li>
+   <li><label><input type="checkbox"><span>O preço vai antes de a paciente entender o que vai fazer.</span></label></li>
+   <li><label><input type="checkbox"><span>“Vou ver com a doutora”, e a resposta nunca volta.</span></label></li>
+   <li><label><input type="checkbox"><span>Quem para de responder não recebe mais nenhum contato.</span></label></li>
+   <li><label><input type="checkbox"><span>A conversa termina sem próximo passo: sem data, horário ou link.</span></label></li>
+  </ul>
+  <div style="margin-top:36px;display:grid;gap:8px"><span class="cap">Presente para a sua clínica</span><h3>Descubra em que mensagem a paciente esfriou</h3><p class="dim" style="font-size:15px">O texto abaixo é um prompt: uma instrução pronta para a inteligência artificial. Toque em copiar, abra o ChatGPT, o Claude ou o Gemini, cole e troque o trecho em destaque pela conversa da paciente que parou de responder. A IA mostra onde ela esfriou e escreve a mensagem para retomar o contato.</p></div>
+  <div class="term mini">
+   <div class="tb"><i></i><i></i><i></i><span>onde-a-paciente-esfriou.txt</span><button class="copy" data-c="p2">copiar</button></div>
+<pre id="p2">Vou colar uma conversa de WhatsApp entre a minha clínica e uma paciente que parou de responder. Já tirei o nome e o telefone dela.
+
+Analise como uma especialista em atendimento de clínicas de alto padrão e me diga:
+1. Em que mensagem exata ela esfriou, e por quê.
+2. Quanto tempo a clínica levou para responder cada mensagem dela.
+3. Se o preço apareceu antes de ela entender o valor do que vai fazer.
+4. Se alguma pergunta dela ficou sem resposta.
+5. Qual deveria ter sido o próximo passo proposto.
+
+Depois, escreva uma única mensagem para eu enviar hoje e retomar a conversa: curta, acolhedora, sem pressão, sem desconto e sem “só passando para saber”.
+
+Conversa:
+<mark>[cole aqui]</mark></pre>
+  </div>
+  <p class="nota">Antes de colar, apague nome, telefone e fotos da paciente.</p>
+ </div>
+</div>
+</section>
+
+<section id="contato" class="alt">
+<div class="w form-wrap">
+ <div style="display:grid;gap:16px;align-content:start">
+  <span class="cap">Para quem faz harmonização facial</span>
+  <h2>Quer a Central <span class="dim">na sua clínica?</span></h2>
+  <p class="dim">Conta um pouco sobre você. Ao enviar, suas respostas vão direto para o WhatsApp do Juan, sócio fundador da Velloce, que responde em até um dia útil.</p>
+ </div>
+ <form id="f" name="clinica" method="POST" data-netlify="true" netlify-honeypot="site">
+  <input type="hidden" name="form-name" value="clinica">
+  <p hidden><label>Não preencha: <input name="site"></label></p>
+  <div class="row">
+   <label class="f"><span>Seu nome</span><input name="nome" required autocomplete="name"></label>
+   <label class="f"><span>WhatsApp</span><input name="whatsapp" required inputmode="tel" autocomplete="tel" placeholder="(11) 99999-9999"></label>
+  </div>
+  <div class="row">
+   <label class="f"><span>Você é</span><select name="perfil" required><option value="">Escolha</option><option>Médica ou médico</option><option>Dentista</option><option>Biomédica ou biomédico</option><option>Enfermeira ou enfermeiro</option><option>Farmacêutica ou farmacêutico</option><option>Outro</option></select></label>
+   <label class="f"><span>Cidade</span><input name="cidade" required autocomplete="address-level2"></label>
+  </div>
+  <div class="row">
+   <label class="f"><span>Onde você atende</span><select name="onde_atende" required><option value="">Escolha</option><option>Clínica própria</option><option>Consultório ou sala alugada</option><option>Atendo em outra clínica</option><option>Ainda vou abrir</option></select></label>
+   <label class="f"><span>Contatos novos por mês</span><select name="leads" required><option value="">Escolha</option><option>Menos de 30</option><option>De 30 a 100</option><option>De 100 a 300</option><option>Mais de 300</option><option>Não sei</option></select></label>
+  </div>
+  <button class="btn pri" type="submit">Enviar e falar no WhatsApp →</button>
+  <p class="priv">Seus dados são usados só para este contato.</p>
+ </form>
+ <div class="ok" id="ok" hidden><span class="cap">Recebido</span><h3>Obrigada! Abrindo o WhatsApp do Juan.</h3><p class="dim">Se o WhatsApp não abriu sozinho, <a id="wa" href="#" style="color:var(--ink);font-weight:600">toque aqui</a>. Suas respostas já vão na mensagem, é só enviar.</p></div>
+</div>
+</section>
+
+<footer><div class="w"><span>Velloce · Aceleradora comercial para clínicas de harmonização facial</span><span>Onde o cuidado encontra agilidade.</span></div></footer>
+
+<script src="/ia/ia.js" defer></script>
+
+</body>
+</html>
